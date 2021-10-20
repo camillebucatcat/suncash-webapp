@@ -1,0 +1,10 @@
+.btn-menu {
+  display: flex;
+  align-items: center;
+  ion-button {
+    --box-shadow: none;
+    --border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+}

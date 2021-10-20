@@ -22,7 +22,7 @@
 
 .about-card {
   border-radius: 10px;
-  height: 580px;
+  height: 560px;
 
   > div {
     padding: 30px;
@@ -41,6 +41,22 @@
     background-image: url(../../../assets/images/stocks-bonds.png);
     background-size: 290px;
     background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  &#bankroll {
+    background-color: #9ECFFF;
+    background-image: url(../../../assets/images/bankroll.png);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  &#crypto {
+    background-color: #C1D6D4;
+    background-image: url(../../../assets/images/stocks-bonds.png);
+    background-size: contain;
+    background-position: bottom center;
     background-repeat: no-repeat;
   }
 

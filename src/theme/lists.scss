@@ -1,0 +1,37 @@
+.action-list {
+    background: transparent;
+
+    ion-list-header {
+        padding-inline-start: 0;
+    }
+    
+    ion-item {
+        --background: transparent;
+        --padding-start: 0;
+        --min-height: 75px;
+        color: var(--ion-color-dark);
+        --border-color: #E7E7E7;
+        line-height: 1;
+    }
+}
+
+.contact-list {
+    ion-avatar {
+        height: 70px;
+        width: 70px;
+    }
+
+    ion-list-header {
+        --color: var(--ion-color-medium);
+        padding-inline-start: 0.2em;
+    }
+    ion-item {
+        --background: transparent;
+        --padding-start: 0.2em;
+        --min-height: 85px;
+        color: var(--ion-color-dark);
+        --border-color: #E7E7E7;
+        line-height: 1;
+    }
+
+}

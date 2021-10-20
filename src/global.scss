@@ -25,7 +25,10 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-@import url(../src/theme/buttons.scss);
+@import "./theme/buttons.scss";
+@import "./theme/lists.scss";
+@import "./theme/cards.scss";
+@import "./theme/custom-class.scss";
 
 * {
   font-family: "Metropolis", sans-serif;
@@ -146,4 +149,23 @@ ion-content {
 
 .text-gray {
   color: #8A959E;
+}
+
+.page-header {
+  min-height: 60px;
+  border-bottom: 1px solid #E2E2E2;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--ion-color-medium);
+  padding: 20px;
+
+  &.no-header {
+    border-bottom: none !important;
+  }
+  .title {
+      color: var(--ion-color-medium);
+      text-align: left;
+      font-size: 12px;
+  }
 }

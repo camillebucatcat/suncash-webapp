@@ -1,0 +1,15 @@
+ion-card {
+    --background: white;
+
+    .page-content {
+        padding: 20px;
+    }
+
+    .section-title {
+        color: var(--ion-color-gray);
+        text-align: left;
+        font-size: 12px;
+        text-transform: uppercase;
+    }    
+}
+

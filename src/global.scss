@@ -57,8 +57,15 @@ ion-content {
     position: relative;
   }
 
+  .savings-container {
+    background: #C8D7E3;
+  }
+
   .balance-container {
     background-color: #fff;
+  }
+
+  .balance-container, .savings-container {
     border-radius: 10px;
     padding: 40px 24px;
 

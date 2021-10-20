@@ -54,12 +54,13 @@ ion-content {
     max-width: 680px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
   }
 
   .balance-container {
     background-color: #fff;
     border-radius: 10px;
-    padding: 24px;
+    padding: 40px 24px;
 
     .amount-balance {
       font-size: 48px;

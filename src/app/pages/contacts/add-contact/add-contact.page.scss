@@ -1,0 +1,32 @@
+ion-button {
+    --border-radius: 50px;
+    --box-shadow: none;
+    text-transform: none;
+    height: 60px;
+    font-size: 16px;
+    min-width: 60px;
+}
+
+.btn-group {
+    text-align: right;
+    margin-top: 3rem;
+}
+
+ion-item {
+    --padding-start: 0;
+}
+
+ion-select {
+    box-shadow: 0 4px 20px rgb(79 98 192 / 10%);
+    border-radius: 40px;
+    padding: 10px;
+    margin: 5px 10px 10px 10px;
+    max-width: 96%;
+
+    --placeholder-color: var(--ion-color-dark);
+}
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

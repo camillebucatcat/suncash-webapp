@@ -1,3 +1,10 @@
+.btn {
+  --border-radius: 20px;
+  min-width: 250px;
+  min-height: 50px;
+  text-transform: capitalize;
+}
+
 .btn-gray {
   --background: #F5F5FA;
 }
@@ -11,4 +18,8 @@
   color: #000;
   text-transform: capitalize;
   --padding-start: 0;
+}
+
+.btn-cancel {
+  --background: #E8E8F1;
 }

@@ -169,3 +169,23 @@ ion-content {
       font-size: 12px;
   }
 }
+
+.form {
+  ion-label {
+    --color: var(--ion-color-medium) !important;
+    &.item-has-focus {
+      --color: var(--ion-color-medium) !important;
+    }
+  }
+  ion-input {
+    font-weight: 600;
+    --color: var(--ion-color-primary);
+  }
+  ion-item {
+    --color-activated: var(--ion-color-medium);
+    --highlight-color-focused: #FFAE00;
+  }
+  .item-has-focus .label-stacked {
+    color: var(--ion-color-medium) !important;
+  }
+}

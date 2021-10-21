@@ -89,132 +89,133 @@
       <div class="container">
         <ion-card>
           <ion-card-header class="page-header">
-            <h1 class="title">Western Union International</h1>
-          </ion-card-header>
-        
+            Western Union International
+          </ion-card-header>        
           <ion-card-content class="page-content">
-            <h1 class="fs-36 fw-700 text-dark mb-3">Who are you sending to?</h1>
+            <div class="section-title"></div>
             <ion-row>
               <ion-col size="12">
-                <ion-searchbar></ion-searchbar>
-                  <div>
-                    <ion-button fill="clear" class="btn-add" size="small" (click)="openPage('add-contact')">
-                      <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="36" cy="36" r="36" fill="#F5F5FA"/>
-                        <path d="M28 35.9999H36.2782M36.2782 35.9999V44.5M36.2782 35.9999V28M36.2782 35.9999H44.5" stroke="#001134" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                      <span class="ml-2">
-                        Add new Contact
-                      </span>
-                    </ion-button>   
-                  </div>
-
-                <ion-list class="contact-list">
-                  <ion-list-header>
-                    <ion-label class="section-title">Saved Contacts</ion-label>
-                  </ion-list-header>
-                  
-                  <ion-item>
-                    <ion-avatar slot="start"><img src="../../../assets/images/image00.png"></ion-avatar>
-                      <ion-label>
-                        <h2 class="text-dark">Alex Schuman</h2>
-                        <span class="text-gray fs-12">1234 Main St., Miami</span>
-                      </ion-label>
-                      <ion-buttons slot="end">
-                        <ion-button (click)="openPage('send-amount')">
-                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="18" cy="28" r="2" transform="rotate(-90 18 28)" fill="#001134"/>
-                            <circle cx="18" cy="18" r="2" transform="rotate(-90 18 18)" fill="#001134"/>
-                            <circle cx="18" cy="8" r="2" transform="rotate(-90 18 8)" fill="#001134"/>
-                          </svg>                            
-                        </ion-button>
-                      </ion-buttons>
+                <div class="fs-36 fw-700 text-dark mb-3">Amount to Paula</div>
+                <form class="form">
+                <ion-card class="card mx-0">
+                  <p class="text-center pt-4 text-medium">You send</p> 
+                  <ion-item lines="full">
+                    <ion-input class="form-input send-amount" placeholder="0"></ion-input>  
                   </ion-item>
-        
-                  <ion-item>
-                    <ion-avatar slot="start"><img src="../../../assets/images/image00.png"></ion-avatar>
-                    <ion-label>
-                      <h2 class="text-dark">Alex Schuman</h2>
-                      <span class="text-gray fs-12">1234 Main St., Miami</span>
-                    </ion-label>
-                    <ion-buttons slot="end">
-                      <ion-button (click)="openPage('send-amount')">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="18" cy="28" r="2" transform="rotate(-90 18 28)" fill="#001134"/>
-                          <circle cx="18" cy="18" r="2" transform="rotate(-90 18 18)" fill="#001134"/>
-                          <circle cx="18" cy="8" r="2" transform="rotate(-90 18 8)" fill="#001134"/>
+                  <div>
+                    <ion-item>
+                      <ion-avatar class="country-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.5008 15.75C20.4383 15.75 18.7508 14.0625 18.7508 12H4.05078V19.95C6.07578 21.975 8.88828 23.25 12.0008 23.25C16.9133 23.25 21.0758 20.1 22.6133 15.75H22.5008Z" fill="#42ADE2"/>
+                          <path d="M22.5008 8.25H22.6133C21.0758 3.9 16.9133 0.75 12.0008 0.75C8.88828 0.75 6.07578 2.025 4.05078 4.05V12H18.7508C18.7508 9.9375 20.4383 8.25 22.5008 8.25Z" fill="#42ADE2"/>
+                          <path d="M22.6133 8.25H4.05078V15.75H22.6133C23.0258 14.5875 23.2508 13.3125 23.2508 12C23.2508 10.6875 23.0258 9.4125 22.6133 8.25Z" fill="#FFE62E"/>
+                          <path d="M4.05 4.05029C2.025 6.07529 0.75 8.88779 0.75 12.0003C0.75 15.1128 2.025 17.9253 4.05 19.9503L12 12.0003L4.05 4.05029Z" fill="#3E4347"/>
+                        </svg>                          
+                      </ion-avatar> 
+                      <span>Bahamian Dollars</span>
+                    </ion-item>      
+                  </div>
+                </ion-card>
+                <ion-card class="card mx-0">
+                  <p class="text-center pt-4 text-medium">Receiver gets</p> 
+                  <ion-item lines="full">
+                    <div class="form-input receiver-amount">0</div>
+                  </ion-item>
+                  <div>
+                    <ion-item lines="full">
+                      <ion-avatar class="country-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.9133 4.0125C15.5258 -0.3375 8.43828 -0.3375 4.05078 4.0125L12.0008 10.125L19.9133 4.0125Z" fill="#699635"/>
+                          <path d="M4.08789 19.9875C8.47539 24.3375 15.5629 24.3375 19.9504 19.9875L12.0004 13.875L4.08789 19.9875Z" fill="#699635"/>
+                          <path d="M21.7496 17.6241C23.7371 14.1741 23.7371 9.86162 21.7496 6.41162L14.4746 11.9991L21.7496 17.6241Z" fill="#3E4347"/>
+                          <path d="M2.25039 6.375C0.262891 9.8625 0.262891 14.1375 2.25039 17.625L9.56289 12L2.25039 6.375Z" fill="#3E4347"/>
+                          <path d="M19.9125 4.01318L12 10.1257L4.0875 4.01318C3.375 4.72568 2.7375 5.51318 2.25 6.37568L9.525 12.0007L2.25 17.6257C2.7375 18.4882 3.375 19.3132 4.0875 19.9882L12 13.8757L19.9125 19.9882C20.625 19.2757 21.225 18.4882 21.75 17.6257L14.475 12.0007L21.75 6.37568C21.2625 5.51318 20.625 4.72568 19.9125 4.01318Z" fill="#FFE62E"/>
+                        </svg>                     
+                      </ion-avatar>
+                      <span>Jamaican Dollars</span>
+                      <ion-buttons slot="end">
+                        <ion-button slot="end" (click)="presentPopover()">
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 16L17.9497 20.9497L22.8995 16" stroke="#001134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
                         </ion-button>
-                    </ion-buttons>
-                  </ion-item>
-        
+                      </ion-buttons>
+                    </ion-item>      
+                  </div>
+                </ion-card>
+
+                <ion-list>
                   <ion-item>
-                    <ion-avatar slot="start"><img src="../../../assets/images/image00.png"></ion-avatar>
                     <ion-label>
-                      <h2 class="text-dark">Alex Schuman</h2>
-                      <span class="text-gray fs-12">1234 Main St., Miami</span>
+                      <h2 class="text-medium">Available Balance:</h2>
                     </ion-label>
-                    <ion-buttons slot="end">
-                      <ion-button (click)="openPage('send-amount')">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="18" cy="28" r="2" transform="rotate(-90 18 28)" fill="#001134"/>
-                          <circle cx="18" cy="18" r="2" transform="rotate(-90 18 18)" fill="#001134"/>
-                          <circle cx="18" cy="8" r="2" transform="rotate(-90 18 8)" fill="#001134"/>
-                        </svg> 
-                      </ion-button>
-                    </ion-buttons>
+                    <span slot="end" color="dark">$ 150.00</span>
                   </ion-item>
                   <ion-item>
-                    <ion-avatar slot="start"><img src="../../../assets/images/image00.png"></ion-avatar>
                     <ion-label>
-                      <h2 class="text-dark">Alex Schuman</h2>
-                      <span class="text-gray fs-12">1234 Main St., Miami</span>
+                      <h2 class="text-dark">Include fees?</h2>
+                      <p class="text-medium fs-12">
+                        By including fees, the receiver gets a <br>
+                        lower amount after deduction of fees
+                      </p>
+                    </ion-label>
+                    <ion-toggle slot="end" color="primary"></ion-toggle>
+                  </ion-item>
+                  <ion-item lines="none">
+                    <ion-label>
+                      <h2 class="text-medium">Total to pay</h2>
+                    </ion-label>
+                    <span slot="end" color="dark" class="fs-24">$ 117.00</span>
+                  </ion-item>
+                  <ion-item lines="none">
+                    <ion-label>
+                      <h2 class="text-medium">Receiver gets</h2>
+                    </ion-label>
+                    <span slot="end" color="dark">JMD $ 15,000.00</span>
+                  </ion-item>          
+                  <ion-item lines="none">
+                    <ion-label>
+                      <h2 class="text-medium">Sending fee</h2>
+                    </ion-label>
+                    <span slot="end" color="dark">$ 11.71</span>
+                  </ion-item>
+                  <ion-item lines="none">
+                    <ion-label>
+                      <h2 class="text-medium">Transaction fee</h2>
+                    </ion-label>
+                    <span slot="end" color="dark">$ 4.99</span>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>
+                      <h2 class="text-medium">VAT</h2>
+                    </ion-label>
+                    <span slot="end" color="dark">$ 0.60</span>
+                  </ion-item>    
+                  <ion-item lines="full" class="h-75">
+                    <ion-avatar slot="start" class="country-icon">
+                      <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.2786 14.4674C24.5804 14.1656 24.75 13.7562 24.75 13.3294V4.35938C24.75 3.47053 24.0295 2.75 23.1406 2.75H14.1706C13.7438 2.75 13.3344 2.91956 13.0326 3.22138L3.72137 12.5326C3.09288 13.1611 3.09288 14.1801 3.72137 14.8086L12.6914 23.7786C13.3199 24.4071 14.3389 24.4071 14.9674 23.7786L24.2786 14.4674ZM20.3281 4.5625C21.7693 4.5625 22.9375 5.73074 22.9375 7.17188C22.9375 8.61301 21.7693 9.78125 20.3281 9.78125C18.887 9.78125 17.7187 8.61301 17.7187 7.17188C17.7187 5.73074 18.887 4.5625 20.3281 4.5625Z" fill="#001134" stroke="#001134"/>
+                      </svg>                        
+                    </ion-avatar>
+                    <ion-label>
+                      <h2 class="text-dark">Add promo code</h2>
                     </ion-label>
                     <ion-buttons slot="end">
-                      <ion-button (click)="openPage('send-amount')">
+                      <ion-button>
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="18" cy="28" r="2" transform="rotate(-90 18 28)" fill="#001134"/>
-                          <circle cx="18" cy="18" r="2" transform="rotate(-90 18 18)" fill="#001134"/>
-                          <circle cx="18" cy="8" r="2" transform="rotate(-90 18 8)" fill="#001134"/>
+                          <path d="M13 16L17.9497 20.9497L22.8995 16" stroke="#001134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </ion-button>
                     </ion-buttons>
-                  </ion-item>          
-
-                  <ion-item>
-                    <ion-avatar slot="start"><img src="../../../assets/images/image00.png"></ion-avatar>
-                    <ion-label>
-                      <h2 class="text-dark">Alex Schuman</h2>
-                      <span class="text-gray fs-12">1234 Main St., Miami</span>
-                    </ion-label>
-                    <ion-buttons slot="end">
-                      <ion-button (click)="openPage('send-amount')">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="18" cy="28" r="2" transform="rotate(-90 18 28)" fill="#001134"/>
-                          <circle cx="18" cy="18" r="2" transform="rotate(-90 18 18)" fill="#001134"/>
-                          <circle cx="18" cy="8" r="2" transform="rotate(-90 18 8)" fill="#001134"/>
-                        </svg>                          
-                      </ion-button>
-                    </ion-buttons>
-                  </ion-item>
-                  <ion-item>
-                    <ion-avatar slot="start"><img src="../../../assets/images/image00.png"></ion-avatar>
-                    <ion-label>
-                      <h2 class="text-dark">Alex Schuman</h2>
-                      <span class="text-gray fs-12">1234 Main St., Miami</span>
-                    </ion-label>
-                    <ion-buttons slot="end">
-                      <ion-button (click)="openPage('send-amount')" >
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="18" cy="28" r="2" transform="rotate(-90 18 28)" fill="#001134"/>
-                          <circle cx="18" cy="18" r="2" transform="rotate(-90 18 18)" fill="#001134"/>
-                          <circle cx="18" cy="8" r="2" transform="rotate(-90 18 8)" fill="#001134"/>
-                          </svg>
-                      </ion-button>
-                    </ion-buttons>
-                  </ion-item>          
-                </ion-list>    
-              </ion-col>  
+                  </ion-item>   
+                </ion-list>
+                <div class="btn-group">
+                  <ion-button color="danger" class="btn btn-danger">Confirm</ion-button>
+                  <br>
+                  <ion-button class="btn btn-cancel text-dark">Cancel</ion-button>  
+                </div>
+                </form>
+              </ion-col>
             </ion-row> 
           </ion-card-content>
         </ion-card>

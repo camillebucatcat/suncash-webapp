@@ -1,0 +1,38 @@
+.form-input {
+     text-align: center;
+    &.send-amount {
+        --padding-top: 0;
+        font-size: 48px;
+        color: #F83E00;
+    }
+    &.receiver-amount {
+        font-size: 24px;
+        width: 100%;
+    }
+}
+.country-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-group {
+    width: 100%;
+    text-align: center;
+    .btn {
+        min-width: 250px;
+    }
+}
+
+.h-75 {
+    --min-height: 75px;
+}
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgb(79 98 192 / 10%) !important;
+}
+
+ion-item {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+}

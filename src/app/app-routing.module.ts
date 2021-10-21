@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'send',
     loadChildren: () => import('./pages/international/send/send.module').then( m => m.SendPageModule)
   },
+  {
+    path: 'send-amount',
+    loadChildren: () => import('./pages/international/send-amount/send-amount.module').then( m => m.SendAmountPageModule)
+  },
+  {
+    path: 'add-contact',
+    loadChildren: () => import('./pages/contacts/add-contact/add-contact.module').then( m => m.AddContactPageModule)
+  },
+  {
+    path: 'add-contact-address',
+    loadChildren: () => import('./pages/contacts/add-contact-address/add-contact-address.module').then( m => m.AddContactAddressPageModule)
+  },
 ];
 
 @NgModule({

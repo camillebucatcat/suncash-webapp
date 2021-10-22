@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'add-contact-address',
     loadChildren: () => import('./pages/contacts/add-contact-address/add-contact-address.module').then( m => m.AddContactAddressPageModule)
   },
+  {
+    path: 'personal-details',
+    loadChildren: () => import('./pages/personal-details/personal-details.module').then( m => m.PersonalDetailsPageModule)
+  },
+  {
+    path: 'edit-address',
+    loadChildren: () => import('./pages/personal/edit-address/edit-address.module').then( m => m.EditAddressPageModule)
+  },
 ];
 
 @NgModule({

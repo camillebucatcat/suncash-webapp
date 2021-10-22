@@ -9,7 +9,7 @@
         <div class="user-id">suncash.me/misssa</div>
       </div>
       <ul class="menu-links">
-        <li class="active">
+        <li>
           <a href="#">
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -43,7 +43,7 @@
             <span>Transactions</span>
           </a>
         </li>
-        <li>
+        <li class="active">
           <a href="#">
             <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -110,7 +110,25 @@
                   </ion-item>
                   <ion-item>
                     <ion-label position="stacked">Mobile Number</ion-label>
-                    <div class="d-flex">
+                    <div class="d-flex w-100">    
+                      <ion-buttons slot="end">
+                        <ion-button class="mobile" (click)="presentPopover()">
+                          <ion-avatar class="d-flex country-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19.9133 4.0125C15.5258 -0.3375 8.43828 -0.3375 4.05078 4.0125L12.0008 10.125L19.9133 4.0125Z" fill="#699635"/>
+                              <path d="M4.08789 19.9875C8.47539 24.3375 15.5629 24.3375 19.9504 19.9875L12.0004 13.875L4.08789 19.9875Z" fill="#699635"/>
+                              <path d="M21.7496 17.6241C23.7371 14.1741 23.7371 9.86162 21.7496 6.41162L14.4746 11.9991L21.7496 17.6241Z" fill="#3E4347"/>
+                              <path d="M2.25039 6.375C0.262891 9.8625 0.262891 14.1375 2.25039 17.625L9.56289 12L2.25039 6.375Z" fill="#3E4347"/>
+                              <path d="M19.9125 4.01318L12 10.1257L4.0875 4.01318C3.375 4.72568 2.7375 5.51318 2.25 6.37568L9.525 12.0007L2.25 17.6257C2.7375 18.4882 3.375 19.3132 4.0875 19.9882L12 13.8757L19.9125 19.9882C20.625 19.2757 21.225 18.4882 21.75 17.6257L14.475 12.0007L21.75 6.37568C21.2625 5.51318 20.625 4.72568 19.9125 4.01318Z" fill="#FFE62E"/>
+                            </svg>                     
+                          </ion-avatar>
+  
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 16L17.9497 20.9497L22.8995 16" stroke="#001134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </ion-button>
+                      </ion-buttons>
+<!--  
                       <ion-avatar class="mr-4 d-flex country-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M19.9133 4.0125C15.5258 -0.3375 8.43828 -0.3375 4.05078 4.0125L12.0008 10.125L19.9133 4.0125Z" fill="#699635"/>
@@ -119,7 +137,7 @@
                           <path d="M2.25039 6.375C0.262891 9.8625 0.262891 14.1375 2.25039 17.625L9.56289 12L2.25039 6.375Z" fill="#3E4347"/>
                           <path d="M19.9125 4.01318L12 10.1257L4.0875 4.01318C3.375 4.72568 2.7375 5.51318 2.25 6.37568L9.525 12.0007L2.25 17.6257C2.7375 18.4882 3.375 19.3132 4.0875 19.9882L12 13.8757L19.9125 19.9882C20.625 19.2757 21.225 18.4882 21.75 17.6257L14.475 12.0007L21.75 6.37568C21.2625 5.51318 20.625 4.72568 19.9125 4.01318Z" fill="#FFE62E"/>
                         </svg>                     
-                      </ion-avatar>
+                      </ion-avatar> -->
                       <span class="mr-2">+1</span>
                       <ion-input></ion-input>  
                       </div>

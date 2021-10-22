@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController, PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-country-list',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private popoverController: PopoverController) { }
 
   ngOnInit() {}
+
+    close() {
+      this.popoverController.dismiss();
+    }
 
 }

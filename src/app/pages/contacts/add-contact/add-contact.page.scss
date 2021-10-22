@@ -16,6 +16,7 @@ ion-item {
     --padding-start: 0;
 }
 
+
 ion-select {
     box-shadow: 0 4px 20px rgb(79 98 192 / 10%);
     border-radius: 40px;
@@ -29,4 +30,23 @@ ion-select {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+
+.country-icon {
+    svg{
+        width: 25px;
+    }
+}
+
+.mobile {
+    box-shadow: 0 4px 20px rgb(79 98 192 / 10%);
+
+    max-width: 80px;
+    border-radius: 50px;
+    margin: 10px;
 }

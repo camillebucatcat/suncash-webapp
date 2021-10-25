@@ -7,14 +7,21 @@ import { IonicModule } from '@ionic/angular';
 import { EditAddressPageRoutingModule } from './edit-address-routing.module';
 
 import { EditAddressPage } from './edit-address.page';
+import { InnerMenuComponentModule } from 'src/app/components/inner-menu/inner-menu.component.module';
+import { InnerMenuComponent } from 'src/app/components/inner-menu/inner-menu.component';
+import { InnerHeaderComponent } from 'src/app/components/inner-header/inner-header.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EditAddressPageRoutingModule
+    EditAddressPageRoutingModule,
+    InnerMenuComponentModule
   ],
-  declarations: [EditAddressPage]
+  declarations: [
+    EditAddressPage,
+    InnerHeaderComponent
+  ]
 })
 export class EditAddressPageModule {}

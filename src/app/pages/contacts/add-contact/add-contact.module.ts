@@ -7,14 +7,20 @@ import { IonicModule } from '@ionic/angular';
 import { AddContactPageRoutingModule } from './add-contact-routing.module';
 
 import { AddContactPage } from './add-contact.page';
+import { InnerMenuComponentModule } from 'src/app/components/inner-menu/inner-menu.component.module';
+import { InnerHeaderComponent } from 'src/app/components/inner-header/inner-header.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AddContactPageRoutingModule
+    AddContactPageRoutingModule,
+    InnerMenuComponentModule
   ],
-  declarations: [AddContactPage]
+  declarations: [
+    AddContactPage,
+    InnerHeaderComponent
+  ]
 })
 export class AddContactPageModule {}

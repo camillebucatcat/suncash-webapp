@@ -34,7 +34,15 @@
   font-family: "Metropolis", sans-serif;
 }
 
-ion-content {
+app-inner-header {
+  display: block;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+ion-content, ion-menu {
   --background: #F5F5FA;
 }
 
@@ -45,13 +53,23 @@ ion-content {
   height: 100%;
 }
 
- .sidemenu-container {
+ .sidemenu-container, .other-container {
   width: 330px;
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
+
 }
 
 .content-container {
-  width: calc(100% - (340px * 2));
+  width: 100%;
   padding: 1rem;
+
+  @media screen and (min-width: 992px) {
+    width: calc(100% - (340px * 1));
+  }
 
   .container {
     max-width: 680px;
@@ -79,7 +97,7 @@ ion-content {
   }
 }
 
-.sidemenu-container {
+.sidemenu-container, .main-menu {
   
   .user-profile {
     padding: 1rem;
